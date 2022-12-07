@@ -26,12 +26,8 @@ public class TjmaxTest {
 
     public TjmaxTest() {
     }
-
-    // TODO add test methods here.
-    // The methods must be annotated with annotation @Test. For example:
-    //
-    // @Test
-    // public void hello() {}
+//commiting by bharathi
+   
     @BeforeClass
     public static void setUpClass() throws Exception {
 
@@ -62,10 +58,10 @@ public class TjmaxTest {
 
         driver.findElement(By.id("usmm-tl-cat240003")).click();
 
-        //driver.findElement(By.xpath("//div[@id='bx-element-1971156-kDGwXbf']/button/span")).click();
-        
+        driver.findElement(By.xpath("//div[@id='bx-element-1971156-kDGwXbf']/button/span")).click();
+
         driver.get("https://tjmaxx.tjx.com/store/shop/new-arrivals/_/N-842114098?Nr=AND%28OR%28product.catalogId%3Atjmaxx%29%2Cproduct.siteId%3Atjmaxx%29&tn=0");
-       // driver.manage().wait(1000);
+        driver.manage().wait(1000);
         driver.manage().deleteAllCookies();
 
         Thread.sleep(1000);
